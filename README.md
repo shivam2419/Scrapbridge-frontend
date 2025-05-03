@@ -42,22 +42,25 @@ Managing household scrap is often a hassle — people don’t know its value or 
 
 ## 🚀 How to Run Locally
 
-1. Clone the repository:
+1. Set up the backend:
 ```bash
-git clone https://github.com/your-username/scrapbridge.git
-cd scrapbridge
+git clone https://github.com/your-username/Scrapbridge-backend.git
+cd Scrapbridge-backend
 
-```
-2. Set up the backend:
-```bash
-cd backend
+cd EWaste
+
 pip install -r requirements.txt
+
 python manage.py migrate
 python manage.py runserver
 ```
-3. Set up the frontend
+2. Set up the frontend
 ```bash
+git clone https://github.com/your-username/Scrapbridge-frontend.git
+cd Scrapbridge-frontend
+
 cd frontend
+
 npm install
 npm start
 ```
