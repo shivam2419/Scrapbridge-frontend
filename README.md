@@ -47,8 +47,6 @@ Managing household scrap is often a hassle — people don’t know its value or 
 git clone https://github.com/your-username/scrapbridge.git
 cd scrapbridge
 
-
-For accessing services like *Google login*, *Razorpay* and other services that uses API keys, you have to use your own key.
 ```
 2. Set up the backend:
 ```bash
