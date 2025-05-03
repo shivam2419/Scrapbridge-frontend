@@ -36,7 +36,7 @@ Managing household scrap is often a hassle — people don’t know its value or 
 
 | Frontend | Backend | ML | Other Services |
 |----------|---------|----|----------------|
-| React.js | Django  | TensorFlow / Keras (for classification) | Leaflet, Razorpay, RapidAPI, PostgreSQL |
+| React.js | Django  | TensorFlow / Keras (for classification) | Leaflet, Razorpay, RapidAPI, SQLite |
 
 ---
 
@@ -49,3 +49,19 @@ cd scrapbridge
 
 
 For accessing services like *Google login*, *Razorpay* and other services that uses API keys, you have to use your own key.
+```
+2. Set up the backend:
+```bash
+cd backend
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
+3. Set up the frontend
+```bash
+cd frontend
+npm install
+npm start
+```
+
+To use services like *Razorpay*, *OAuth login* that requires API key, there you have to use your own api key. (Write them in settings.py or .env file)
